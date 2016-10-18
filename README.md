@@ -29,13 +29,13 @@ How to use it
 
 	sudo ffmpeg-3.1.4 -f v4l2 -channel 0 -video_size 1920x1080 -i /dev/video0 -pix_fmt nv12 -r 22 -c:v cedrus264 night_video_test4_1920x1080.mp4
 
-- adjust the -r parameter to get higher bitrate, in this ttest i got 22 FPS / 8475 kb/s
+- adjust the -r parameter and -qp for quality, in this test i got 22 FPS / 8475 kb/s
 
 Play the MP4 file with your preferred application
 
 Sample output is provided, a bit shaking, night.
 
-There is no problem installing this version over a oficial version, they can co-exist.
+There is no problem installing this version over an oficial version, they can co-exist.
 
 Limitations
 ===========
